@@ -1,4 +1,4 @@
-package com.firstapp.firstapplogin.controller;
+package com.firstapp.firstapplogin;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -9,7 +9,6 @@ import java.util.ResourceBundle;
 
 public class LoginController implements Initializable {
 
-
     @FXML
     private Button exitButton;
 
@@ -17,9 +16,7 @@ public class LoginController implements Initializable {
     private Button loginButton;
 
     @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) { //działanie po włączeniu apki
-        exitButton.setOnAction((x) -> {
-            System.out.println("click!");
-        });
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        System.out.println("Open!");
     }
 }
